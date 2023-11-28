@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://astro.party
+
+# Sitemaps
+Sitemap: https://astro.party/sitemap.xml
+Sitemap: https://astro.party/server-sitemap.xml
