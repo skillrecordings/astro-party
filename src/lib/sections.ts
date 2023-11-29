@@ -1,5 +1,5 @@
 import groq from 'groq'
-import {sanityClient} from '@skillrecordings/skill-lesson/utils/sanity-client'
+import {sanityClient} from 'skill-lesson/utils/sanity-client'
 
 const sectionsQuery = groq`*[_type == "module" && moduleType == 'section'] | order(_createdAt desc) {
   _id,

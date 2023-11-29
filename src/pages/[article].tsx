@@ -3,7 +3,7 @@ import {GetStaticPaths, GetStaticProps} from 'next'
 import {type Article, getAllArticles, getArticle} from 'lib/articles'
 import ArticleTemplate from 'templates/article-template'
 import {MDXRemoteSerializeResult} from 'next-mdx-remote'
-import serializeMDX from '@skillrecordings/skill-lesson/markdown/serialize-mdx'
+import serializeMDX from 'skill-lesson/markdown/serialize-mdx'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const {params} = context

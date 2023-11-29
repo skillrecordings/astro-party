@@ -2,11 +2,11 @@ import {getToken} from 'next-auth/jwt'
 import {
   defineRulesForPurchases,
   UserSchema,
-} from '@skillrecordings/skill-lesson/utils/ability'
+} from 'skill-lesson/utils/ability'
 
-import {getSubscriberFromCookie} from '@skillrecordings/skill-lesson/utils/ck-subscriber-from-cookie'
-import {convertkitSetSubscriberCookie} from '@skillrecordings/skill-lesson/utils/ck-set-subscriber-cookie'
-import {publicProcedure, router} from '@skillrecordings/skill-lesson'
+import {getSubscriberFromCookie} from 'skill-lesson/utils/ck-subscriber-from-cookie'
+import {convertkitSetSubscriberCookie} from 'skill-lesson/utils/ck-set-subscriber-cookie'
+import {publicProcedure, router} from 'skill-lesson'
 
 export const abilities = router({
   getAbilities: publicProcedure.query(async ({ctx, input}) => {

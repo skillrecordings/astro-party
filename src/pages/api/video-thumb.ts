@@ -1,5 +1,5 @@
 import {NextApiRequest, NextApiResponse} from 'next'
-import {getVideoResource} from '@skillrecordings/skill-lesson/lib/video-resources'
+import {getVideoResource} from 'skill-lesson/lib/video-resources'
 
 const videoThumb = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'GET') {

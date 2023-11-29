@@ -7,7 +7,7 @@ import Balancer from 'react-wrap-balancer'
 import Header from 'components/app/header'
 import pluralize from 'pluralize'
 import {getOgImage} from 'utils/get-og-image'
-import {Module} from '@skillrecordings/skill-lesson/schemas/module'
+import {Module} from 'skill-lesson/schemas/module'
 
 export async function getStaticProps() {
   const tutorials = await getAllTutorials()

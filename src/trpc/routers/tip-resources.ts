@@ -1,4 +1,4 @@
-import {publicProcedure, router} from '@skillrecordings/skill-lesson'
+import {publicProcedure, router} from 'skill-lesson'
 import {z} from 'zod'
 import {getTip} from '../../lib/tips'
 

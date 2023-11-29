@@ -9,7 +9,7 @@ import {useRouter} from 'next/router'
 import common from '../text/common'
 import {type ConvertkitSubscriber} from '@skillrecordings/convertkit-react-ui/dist/types'
 import {twMerge} from 'tailwind-merge'
-import {track} from '@skillrecordings/skill-lesson/utils/analytics'
+import {track} from 'skill-lesson/utils/analytics'
 import Balancer from 'react-wrap-balancer'
 import Spinner from './spinner'
 

@@ -1,4 +1,4 @@
-import {prisma} from '@skillrecordings/database'
+import {prisma} from 'database'
 
 export async function getPurchaseDetails(purchaseId: string, userId: string) {
   const allPurchases = await prisma.purchase.findMany({

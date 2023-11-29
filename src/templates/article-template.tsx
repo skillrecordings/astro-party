@@ -8,12 +8,12 @@ import {format} from 'date-fns'
 import Image from 'next/image'
 import {PrimaryNewsletterCta} from 'components/primary-newsletter-cta'
 import Share from 'components/share'
-import {useConvertkit} from '@skillrecordings/skill-lesson/hooks/use-convertkit'
-import {track} from '@skillrecordings/skill-lesson/utils/analytics'
+import {useConvertkit} from 'skill-lesson/hooks/use-convertkit'
+import {track} from 'skill-lesson/utils/analytics'
 import Balancer from 'react-wrap-balancer'
 import config from 'config'
 import {MDXRemoteSerializeResult} from 'next-mdx-remote'
-import MDX from '@skillrecordings/skill-lesson/markdown/mdx'
+import MDX from 'skill-lesson/markdown/mdx'
 
 const ArticleTemplate: React.FC<{
   article: Article

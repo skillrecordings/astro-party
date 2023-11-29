@@ -1,4 +1,4 @@
-import {getBaseUrl} from '@skillrecordings/skill-lesson/utils/get-base-url'
+import {getBaseUrl} from 'skill-lesson/utils/get-base-url'
 
 type OgImageUrlOptions = {
   title: string

@@ -1,3 +1,3 @@
-import {sanityVideoResourceWebhook} from '@skillrecordings/skill-lesson/lib/sanity'
+import {sanityVideoResourceWebhook} from 'skill-lesson/lib/sanity'
 
 export default sanityVideoResourceWebhook

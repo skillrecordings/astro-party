@@ -2,10 +2,10 @@ import React from 'react'
 import {GetStaticPaths, GetStaticProps, NextPage} from 'next'
 import {getAllTips, getTip, Tip} from 'lib/tips'
 import TipTemplate from 'templates/tip-template'
-import {VideoResourceProvider} from '@skillrecordings/skill-lesson/hooks/use-video-resource'
-import {LessonProvider} from '@skillrecordings/skill-lesson/hooks/use-lesson'
+import {VideoResourceProvider} from 'skill-lesson/hooks/use-video-resource'
+import {LessonProvider} from 'skill-lesson/hooks/use-lesson'
 import {MDXRemoteSerializeResult} from 'next-mdx-remote'
-import serializeMDX from '@skillrecordings/skill-lesson/markdown/serialize-mdx'
+import serializeMDX from 'skill-lesson/markdown/serialize-mdx'
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
   try {

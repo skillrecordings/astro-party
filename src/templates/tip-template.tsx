@@ -7,7 +7,7 @@ import MuxPlayer, {
   MuxPlayerRefAttributes,
 } from '@mux/mux-player-react'
 import {Tip} from 'lib/tips'
-import MDX from '@skillrecordings/skill-lesson/markdown/mdx'
+import MDX from 'skill-lesson/markdown/mdx'
 import {useRouter} from 'next/router'
 import {
   XIcon,
@@ -19,27 +19,27 @@ import {
 import {shuffle, take} from 'lodash'
 import Image from 'next/legacy/image'
 import {getOgImage} from 'utils/get-og-image'
-import {useTipComplete} from '@skillrecordings/skill-lesson/hooks/use-tip-complete'
-import {localProgressDb} from '@skillrecordings/skill-lesson/utils/dexie'
+import {useTipComplete} from 'skill-lesson/hooks/use-tip-complete'
+import {localProgressDb} from 'skill-lesson/utils/dexie'
 import {
   redirectUrlBuilder,
   SubscribeToConvertkitForm,
 } from '@skillrecordings/convertkit-react-ui'
-import {useConvertkit} from '@skillrecordings/skill-lesson/hooks/use-convertkit'
+import {useConvertkit} from 'skill-lesson/hooks/use-convertkit'
 import {setUserId} from '@amplitude/analytics-browser'
 import {ArticleJsonLd} from '@skillrecordings/next-seo'
-import {Icon} from '@skillrecordings/skill-lesson/icons'
+import {Icon} from 'skill-lesson/icons'
 import {
   useMuxPlayer,
   VideoProvider,
-} from '@skillrecordings/skill-lesson/hooks/use-mux-player'
-import {useVideoResource} from '@skillrecordings/skill-lesson/hooks/use-video-resource'
-import {useLesson} from '@skillrecordings/skill-lesson/hooks/use-lesson'
-import {getBaseUrl} from '@skillrecordings/skill-lesson/utils/get-base-url'
+} from 'skill-lesson/hooks/use-mux-player'
+import {useVideoResource} from 'skill-lesson/hooks/use-video-resource'
+import {useLesson} from 'skill-lesson/hooks/use-lesson'
+import {getBaseUrl} from 'skill-lesson/utils/get-base-url'
 import {trpc} from 'trpc/trpc.client'
-import {track} from '@skillrecordings/skill-lesson/utils/analytics'
+import {track} from 'skill-lesson/utils/analytics'
 import {MDXRemoteSerializeResult} from 'next-mdx-remote'
-import {getTranscriptComponents} from '@skillrecordings/skill-lesson/markdown/transcript-components'
+import {getTranscriptComponents} from 'skill-lesson/markdown/transcript-components'
 import Link from 'next/link'
 
 const TipTemplate: React.FC<{

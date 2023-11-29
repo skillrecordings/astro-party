@@ -4,7 +4,7 @@ import {GetStaticProps} from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import config from 'config'
-import {track} from '@skillrecordings/skill-lesson/utils/analytics'
+import {track} from 'skill-lesson/utils/analytics'
 import Header from 'components/app/header'
 import {getOgImage} from 'utils/get-og-image'
 

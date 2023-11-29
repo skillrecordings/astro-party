@@ -1,3 +1,3 @@
-import {castingwordsWebhookReceiver} from '@skillrecordings/skill-lesson/lib/castingwords'
+import {castingwordsWebhookReceiver} from 'skill-lesson/lib/castingwords'
 
 export default castingwordsWebhookReceiver

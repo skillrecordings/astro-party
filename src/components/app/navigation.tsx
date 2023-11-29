@@ -2,10 +2,10 @@ import React from 'react'
 import Image from 'next/image'
 import {motion, useAnimate} from 'framer-motion'
 import {trpc} from 'trpc/trpc.client'
-import {createAppAbility} from '@skillrecordings/skill-lesson/utils/ability'
+import {createAppAbility} from 'skill-lesson/utils/ability'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
-import {track} from '@skillrecordings/skill-lesson/utils/analytics'
+import {track} from 'skill-lesson/utils/analytics'
 import {twMerge} from 'tailwind-merge'
 
 const useAbilities = () => {
